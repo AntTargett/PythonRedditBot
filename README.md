@@ -3,7 +3,7 @@
 First attempt at a reddit bot :D 
 Includes a script to read posts and a script to respond to posts
 
-##To run this program:
+## To run this program:
 
 pip install praw
 
