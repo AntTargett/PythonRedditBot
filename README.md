@@ -3,7 +3,7 @@ First attempt at a reddit bot
 
 To run this program:
 pip install praw
-Copy the contents of the praw.ini.template into a praw.ini file and add the client secret and client id of your Reddit app
+Copy the contents of the praw.ini.template into a praw.ini file and add the client secret, client id, username and password of your Reddit app
 To create a Reddit app, access this link https://www.reddit.com/prefs/apps/
 
 
