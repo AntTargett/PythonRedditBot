@@ -2,12 +2,21 @@
 First attempt at a reddit bot 
 
 To run this program:
+
 pip install praw
-Copy the contents of the praw.ini.template into a praw.ini file and add the client secret, client id, username and password of your Reddit app
-To create a Reddit app, access this link https://www.reddit.com/prefs/apps/
+
+Copy the contents of the praw.ini.template into a praw.ini file
 
 
-Properites of a submission
+Add the client secret, client id, username and password of your Reddit app
+
+Useful Resources: 
+
+To create a Reddit app or get your app details,use this link https://www.reddit.com/prefs/apps/
+
+Link to Reddit Api docs, https://www.reddit.com/dev/api/
+
+Properites of a submission on Reddit 
 dir(submission)
  
 ['approve',
