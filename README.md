@@ -12,7 +12,7 @@ Copy the contents of the praw.ini.template into a praw.ini file
 
 Add the client secret, client id, username and password of your Reddit app
 
-Useful Resources: 
+### Useful Resources: 
 
 To create a Reddit app or get your app details,use this link, [Reddit App Page](https://www.reddit.com/prefs/apps/)
 
