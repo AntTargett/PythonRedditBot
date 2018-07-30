@@ -27,9 +27,13 @@ print("Successfully accessed subreddit 'r/pythonforengineers")
 
 
 for comment in subreddit.stream.comments():
-    if re.search("ImAnAnt Help", comment.body, re.IGNORECASE):
-        ImAnAnt_reply = "ImAnAntBot: " + "halp me I am in pain"
-        comment.reply(ImAnAnt_reply)
-        print(str(comment) + ImAnAnt_reply)
+    try:
+        if re.search("ImAnAnt Help", comment.body, re.IGNORECASE):
+                ImAnAnt_reply = "ImAnAntBot: " + "halp me I am in pain"
+                comment.reply(ImAnAnt_reply)
+                print(str(comment) + ImAnAnt_reply)
+    except: 
+       print("Rate limit Reached ;(")
+
 for post_id in posts_replied_to:
     f.write(post_id + "\n")
