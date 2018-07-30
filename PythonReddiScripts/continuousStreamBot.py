@@ -26,13 +26,10 @@ print("Successfully accessed subreddit 'r/pythonforengineers")
 
 
 
-for submission in subreddit.new(limit=3):
-    if submission.id not in posts_replied_to:
-        if re.search("i love python", submission.title, re.IGNORECASE):
-            submission.reply("ImAnAnt bot says:  iz okay")
-            print("Bot replying to : ", submission.title)
-            posts_replied_to.append(submission.id)
-
-with open("posts_replied_to.txt", "w") as f:
-    for post_id in posts_replied_to:
-        f.write(post_id + "\n")
+for comment in subreddit.stream.comments():
+    if re.search("ImAnAnt Help", comment.body, re.IGNORECASE):
+        ImAnAnt_reply = "ImAnAntBot: " + "halp me I am in pain"
+        comment.reply(ImAnAnt_reply)
+        print(str(comment) + ImAnAnt_reply)
+for post_id in posts_replied_to:
+    f.write(post_id + "\n")
